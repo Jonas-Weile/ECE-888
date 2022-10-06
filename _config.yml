@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   ECE 888 - Topics in Mathematical Data Science,
   taught at the University of Wisconsin-Madison in the fall of 2022.
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: https://jonas-weile.github.io/ECE-888/ "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonas-weile.github.io/ECE-888/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  Jonas-Weile
 
