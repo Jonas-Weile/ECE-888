@@ -5,9 +5,9 @@ date:   2022-10-05 15:27:01 -0500
 categories: project1
 ---
 
-This project aims to create a model for policy evaluation using causal inference. More specifically, the goal of the project is to create a (late) submission to [the American Causal Inference Conference 2022 Data Challenge](acic2022). This year, the challenge attempts to determine the effect of U.S. health care system interventions that aim to lower Medicare expenditures, by estimating the impact of an intervention on the monthly spending for the average treated patient. The datasets includes data from ~ 300,000 patients from 500 practices over 4 years - or approximately 1.2 million patient-year records per dataset. The dataset contains a number of practices, where intervention is applied to all patients in chosen practices. The first 2 years, no practices receive intervention - then for the 3rd and 4th year, the selected practices receive the intervention. It is noted, that the supplied data is **generated**, but informed by a real intervention. Thus, the intervention for which we actually try to estimate the effect of, is a *generic intervention*.
+This project aims to create a model for policy evaluation using causal inference. More specifically, the goal of the project is to create a (late) submission to [the American Causal Inference Conference 2022 Data Challenge](https://acic2022.mathematica.org/). This year, the challenge attempts to determine the effect of U.S. health care system interventions that aim to lower Medicare expenditures, by estimating the impact of an intervention on the monthly spending for the average treated patient. The datasets includes data from ~ 300,000 patients from 500 practices over 4 years - or approximately 1.2 million patient-year records per dataset. The dataset contains a number of practices, where intervention is applied to all patients in chosen practices. The first 2 years, no practices receive intervention - then for the 3rd and 4th year, the selected practices receive the intervention. It is noted, that the supplied data is **generated**, but informed by a real intervention. Thus, the intervention for which we actually try to estimate the effect of, is a *generic intervention*.
 
-The project will examine the effectiveness of [Bayesian Additive Regression Trees](BART) to estimate the causal impacts. As the results for the ACIC 2022 Data Challenge have already been released, it is already known that BART (with some additions) performed well - we will try to replicate this result.
+The project will examine the effectiveness of [Bayesian Additive Regression Trees](https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.08162) to estimate the causal impacts. As the results for the ACIC 2022 Data Challenge have already been released, it is already known that BART (with some additions) performed well - we will try to replicate this result.
 
 
 ### Impact
@@ -38,9 +38,3 @@ $$ E_{(i \vert z_{i} = 1)} (Y_{it}(1) - Y_{it}(0)) $$
 **Sample average treatment effect on the treated** : 
 
 $$ \dfrac{1}{\sum^{4}_{t=3}{N_{t}}} \sum^{4}_{t=3}{\sum_{i: z_{i} = 1}{(Y_{it}(1) - Y_{it}(0))}} $$
-
-
-
-
-[acic2022]: https://acic2022.mathematica.org/
-[BART]: https://www.tandfonline.com/doi/abs/10.1198/jcgs.2010.08162
