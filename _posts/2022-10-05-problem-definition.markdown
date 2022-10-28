@@ -60,6 +60,6 @@ Finally, we will now specify the causal relationship between the random variable
 
 - We represent all the patient-levet covariates $$ V_{i1}, ..., V_{i5} $$ and practice-level covariates $$ X_{j1}, ..., X_{j9} $$ as single vectors $$ V_{i} $$ and $$ X_{j} $$, respectively.
 
-![DAG describing the causal relationship between variables.](/assets/figures/CausalRelationship.drawio.svg)
+<img src="{{ site.baseurl }}/assets/figures/CausalRelationship.drawio.svg">
 
 <br/>
