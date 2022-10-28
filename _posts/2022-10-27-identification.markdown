@@ -49,7 +49,7 @@ $$ \dfrac{1}{\sum^{4}_{t=3}{N_{t}}} \sum^{4}_{t=3}{\sum_{i: z_{i} = 1}{\left[Y_{
 
 However, as we are only looking at the subgroup of patients that were treated, $$ Y_{it}(0) $$ is a counterfactual, as every patient $$ i $$ has $$ Z_{i} = 1 $$. Thus, the expression we have is a *causal estimand*, and we must somehow convert it into a *statistical estimand*. 
 
-However, we do not *yet* have the tools in this course to convert this SATT to a statistical estimand, thus we will make some major simplifying assumptions. We will assume that the SATT can be well approximated by the vanilla *Average Treatment Effect* (ATE):
+To do this, we will, for now, make some major simplifying assumptions. We will assume that the SATT can be well approximated by the vanilla *Average Treatment Effect* (ATE):
 
 $$ \dfrac{1}{\sum^{4}_{t=3}{N_{t}}} \sum^{4}_{t=3}{\mathbb{E}\left[Y_{it}(1) - Y_{it}(0) \right]}  $$
 
