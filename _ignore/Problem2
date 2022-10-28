@@ -1,0 +1,20 @@
+
+$$ \dfrac{1}{\sum^{4}_{t=3}{N_{t}}} \sum^{4}_{t=3}{\mathbb{E}\left[Y_{it}(1) - Y_{it}(0) \mid Z_{i} = 1 \right]}  $$
+
+$$ = $$
+
+$$ \dfrac{\sum^{4}_{t=3}}{\sum^{4}_{t=3}{N_{t}}} {\left(\mathbb{E}\left[Y_{it}(1) \mid Z_{i} = 1\right] - \mathbb{E}\left[Y_{it}(0) \mid Z_{i} = 1\right]\right)} $$
+
+<br/>
+Then, we can use backdoor adjustment to get:
+
+$$ \mathbb{E}\left[Y_{it}(0)\right]  = 
+        \mathbb{E}\left[\mathbb{E}\left[Y_{it}(0) \mid Z_{i} = 0, Y_{i2}, W_{i}\right]\right]  =
+        \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 0, Y_{i2}, W_{i}\right]\right]$$
+
+<br/>
+for $$ t \in \{3, 4\} $$, where $$ W_{i} $$ again stands for all the observable covariates $$ X_j $$ and $$ V_i $$, and where we used SUTVA to perform the last step.
+We insert to get our final estimand:
+
+$$ ATT = \dfrac{\sum^{4}_{t=3}{\sum_{i: z_{i} = 1}}}
+         {\sum^{4}_{t=3}{N_{t}}} {\left(\mathbb{E}\left[Y_{it}(1)\right]] - \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 0, Y_{i2}, W_{i}\right]\right]\right)} $$
