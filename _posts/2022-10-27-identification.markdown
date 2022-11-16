@@ -61,17 +61,17 @@ $$ \dfrac{\sum^{4}_{t=3}}{\sum^{4}_{t=3}{N_{t}}} {\left(\mathbb{E}\left[Y_{it}(1
 Then, as can be verified from the DAG, we can use backdoor adjustment (which relies on consistency) to get:
 
 $$ \mathbb{E}\left[Y_{it}(a)\right]  = 
-        \mathbb{E}\left[\mathbb{E}\left[Y_{it}(a) \mid Z_{i} = a, Y_{i2}, W_{i}\right]\right]  =
-        \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = a, Y_{i2}, W_{i}\right]\right]$$
+        \mathbb{E}\left[\mathbb{E}\left[Y_{it}(a) \mid Z_{i} = a, Y_{i1}, Y_{i2}, V_{i}\right]\right]  =
+        \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = a, Y_{i1}, Y_{i2}, V_{i}\right]\right]$$
 
 <br/>
-for $$ t \in \{3, 4\} $$, where $$ W_{i} $$ again stands for all the observable covariates $$ X_j $$ and $$ V_i $$, and where we used SUTVA to perform the last step.
+for $$ t \in \{3, 4\} $$, where we used SUTVA to perform the last step.
 We insert to get our final estimand:
 
 $$ ATE = \dfrac{\sum^{4}_{t=3}}
-         {\sum^{4}_{t=3}{N_{t}}} {\left(\mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 1, Y_{i2}, W_{i}\right]\right] - \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 0, Y_{i2}, W_{i}\right]\right]\right)} $$
+         {\sum^{4}_{t=3}{N_{t}}} {\left(\mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 1, Y_{i1}, Y_{i2}, V_{i}\right]\right] - \mathbb{E}\left[\mathbb{E}\left[Y_{it} \mid Z_{i} = 0, Y_{i1}, Y_{i2}, V_{i}\right]\right]\right)} $$
 
 
 <br/>
 
-This final estimand contains two examples of iterated expectations over the covariates $$ W_{i} $$ as well as the outcome at timestep 2.
+This final estimand contains two examples of iterated expectations over the covariates $$ V_{i} $$ as well as the outcome at timesteps 1 and 2.
