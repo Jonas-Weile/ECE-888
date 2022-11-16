@@ -30,7 +30,8 @@ The set $$M$$ consists of parameters $$\mu_{i}$$ for each terminal node $$i$$.
 
 A generic example of a tree model is shown in the figure below.
 
-<img src="{{ site.baseurl }}/assets/figures/RegTree.drawio.svg">
+<img src="{{ site.baseurl }}/assets/figures/regtree.drawio.svg">
+
 
 Then given a tree model $$(T, M)$$ and a pair $$(z, x)$$, the function $$g(z, x, T, M)$$ is defined by taking the input $$(z, x)$$, running it down the tree model, and finally returning the value $$\mu_{i}$$ associated with the terminal node $$i$$ that the input ends at. BART thus models the function $$f(z, x)$$ as a sum of the output of a large number of tree models.
 
