@@ -9,7 +9,7 @@ This is a blog about **Causal Inference** - specifically, I will use this blog t
 2. [Identification of Causal Effects](/ece-888/project1/2022/10/27/identification)
 3. [Estimation of Causal Effects](/ece-888/project1/2022/11/16/estimation)
 4. [Sensitivity Analysis](/ece-888/project1/2022/12/08/sensitivity)
-5. Conclusion
+5. [Conclusion](/ece-888/project1/2022/12/14/conclusion)
 
 ## About me
 I am first year master student at the Technial University of Denmark, currently on an exchange at the University of Wisconsin-Madison.
